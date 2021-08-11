@@ -966,7 +966,7 @@ class MiniGridEnv(gym.Env):
         """
         Set the agent's starting point at an empty position in the grid
         """
-
+        self.step_count = 0
         self.agent_pos = None
         pos = self.place_obj(None, top, size, max_tries=max_tries)
         self.agent_pos = pos
